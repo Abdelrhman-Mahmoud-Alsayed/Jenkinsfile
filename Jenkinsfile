@@ -30,7 +30,12 @@ pipeline {
         }
 
         failure {
-            echo 'Pipeline failed!'
+        emailext(
+            to: 'your-email@gmail.com',
+            subject: "Pipeline Failed: ${env.JOB_NAME}",
+            body: "Build failed! Check: ${env.BUILD_URL}"
+        )
+    
         }
 
         aborted {

@@ -31,7 +31,7 @@ pipeline {
             echo 'Pipeline failed!'
 
             mail(
-                to: 'ahmed.ishanab2@gmail.com',
+                to: 'abdelrhman9004@gmail.com',
                 subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
                 mimeType: 'text/html',
                 body: """

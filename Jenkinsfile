@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Hello World') {
             steps {
-                echo 'Hello Wrld'
+                ech 'Hello Wrld'
             }
         }
    
@@ -22,7 +22,7 @@ pipeline {
 
     post {
         always {
-            ech 'Pipeline finished (success, failure, or aborted).'
+            echo 'Pipeline finished (success, failure, or aborted).'
         }
 
         success {

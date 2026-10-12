@@ -22,7 +22,7 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline finished (success, failure, or aborted).'
+            ech 'Pipeline finished (success, failure, or aborted).'
         }
 
         success {

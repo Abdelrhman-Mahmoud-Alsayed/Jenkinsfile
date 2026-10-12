@@ -7,9 +7,13 @@ pipeline {
     stage('Deploy') {
       steps {
         sh "echo Deploying to ${params.ENVIRONMENT}"
-        sh "./deploy.sh ${params.ENVIRONMENT}"
+        sh "./hello.sh ${params.ENVIRONMENT}"
       }
     }
+    stage('run') {
+      steps {
+        sh 'chmod +x hello.sh'
+        sh './hello.sh'
   }
 }
     
